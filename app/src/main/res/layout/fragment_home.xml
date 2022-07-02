@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_1_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#00BFA5"
+        android:text="@string/homework_1_2"
+        android:textSize="30sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@id/home_3"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#0044FF"
+        android:text="@string/homework_3"
+        android:textSize="30sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@id/home_4"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_1_2"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#6B00FF"
+        android:text="@string/homework_4"
+        android:textSize="30sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_3"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

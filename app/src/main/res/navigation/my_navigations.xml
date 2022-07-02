@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigations"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="developer.abdusamid.homework19.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_firstFirstFragment"
+            app:destination="@id/firstFirstFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_thirdFirstFragment"
+            app:destination="@id/thirdFirstFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fourthFirstFragment"
+            app:destination="@id/fourthFirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstFirstFragment"
+        android:name="developer.abdusamid.homework19.Fragments.First.FirstFirstFragment"
+        android:label="fragment_first_first"
+        tools:layout="@layout/fragment_first_first">
+        <action
+            android:id="@+id/action_firstFirstFragment_to_firstSecondFragment"
+            app:destination="@id/firstSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstSecondFragment"
+        android:name="developer.abdusamid.homework19.Fragments.First.FirstSecondFragment"
+        android:label="fragment_first_second"
+        tools:layout="@layout/fragment_first_second">
+        <action
+            android:id="@+id/action_firstSecondFragment_to_firstThirdFragment"
+            app:destination="@id/firstThirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstThirdFragment"
+        android:name="developer.abdusamid.homework19.Fragments.First.FirstThirdFragment"
+        android:label="fragment_first_third"
+        tools:layout="@layout/fragment_first_third" />
+    <fragment
+        android:id="@+id/thirdFirstFragment"
+        android:name="developer.abdusamid.homework19.Fragments.Third.ThirdFirstFragment"
+        android:label="fragment_third_first"
+        tools:layout="@layout/fragment_third_first">
+        <action
+            android:id="@+id/action_thirdFirstFragment_to_thirdSecondFragment"
+            app:destination="@id/thirdSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdSecondFragment"
+        android:name="developer.abdusamid.homework19.Fragments.Third.ThirdSecondFragment"
+        android:label="fragment_third_second"
+        tools:layout="@layout/fragment_third_second" />
+    <fragment
+        android:id="@+id/fourthFirstFragment"
+        android:name="developer.abdusamid.homework19.Fragments.Fourth.FourthFirstFragment"
+        android:label="fragment_fourth_first"
+        tools:layout="@layout/fragment_fourth_first">
+        <action
+            android:id="@+id/action_fourthFirstFragment_to_fourthSecondFragment"
+            app:destination="@id/fourthSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthSecondFragment"
+        android:name="developer.abdusamid.homework19.Fragments.Fourth.FourthSecondFragment"
+        android:label="fragment_fourth_second"
+        tools:layout="@layout/fragment_fourth_second" />
+</navigation>

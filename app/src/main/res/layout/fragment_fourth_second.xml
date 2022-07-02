@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Fourth.FourthSecondFragment">
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.65"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/click_va_paymega_o_tish_xizmati"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/image4" />
+
+    <TextView
+        android:id="@+id/info4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="@string/info"
+        android:textColor="#505050"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/name4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
